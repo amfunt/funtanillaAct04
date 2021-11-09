@@ -1,0 +1,379 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #fdf1b8;
+    color: #333;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+.container{    
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+}
+/*navbar box*/
+.navbar{
+    background-color: #ffdbbd;
+    padding: 0.6rem 0 0.6rem 0;
+    width: 100%;
+    border-bottom: 1px solid;
+    border-color: #c26743;
+}
+/*navbar alignment*/
+.navbar-text{
+    text-align: left;
+    padding: 0.8rem 0 0.2rem 0;
+    
+}
+/*text on navbar: home skills etc*/
+.navbar-text a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #9e2d00;
+    letter-spacing: 0.4px;
+    font-weight: 500;
+    display: inline-block;
+    padding: 0.4rem 0.6rem;
+    font-size: 1rem;
+
+}
+
+/*navbar text hover*/
+.navbar-text a:hover{
+    color: rgb(238, 9, 66);  
+}
+
+/*line on navbar and titles*/
+hr{
+    width: auto;
+    color: #c26743;
+    border-top: 1px solid;
+}
+/*container of pic and texts on home*/
+.maincontainer .container{
+    display: flex;
+    flex-direction: row;  
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 60px 20px 0 20px;
+
+}
+
+/*container of pic on home*/
+.maincontainer .container .pfp{
+    display: flex;
+    padding: 0.3em 0;
+    width: 62.5%; 
+    max-width: 550px;
+    margin: 0;
+}
+
+.maincontainer .container .pfp img{
+    width: 100%;
+    padding-bottom: 15px;  
+}
+
+/*container for HOME text: hi, name, and description*/
+.maincontainer .container .name{
+    font-family: 'Dosis', sans-serif;
+    text-align: left;
+    color: rgb(241, 84, 72);
+}
+
+/*text: Hi*/
+.maincontainer .container .name .name-hi{
+    font-weight: 800;
+    font-size: 2.3rem;
+}
+
+/*text: name*/
+.maincontainer .container .name .name-text{
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 1.4px;
+}
+
+/*text: description*/
+.maincontainer .container .name .desc-text{
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+/*universal style for area: titles*/
+.titlebar{
+    text-align: center;
+    padding: 1rem;    
+}
+
+/*universal style for text: titles*/
+.titles{  
+    color:#4d0202;
+    font-size: 3em;
+    font-family: 'Dosis', sans-serif;    
+    
+    font-weight: 600;
+    letter-spacing: 8.5px;
+    text-transform: uppercase;
+    text-shadow:
+    0 0 0 rgba(185, 41, 41, 0.904),
+    0 0 0 rgb(240, 0, 0),
+    -1px 1px 0 rgb(95, 3, 3),
+    2px 2px 0 rgb(206, 58, 58);
+}
+
+/*SKILLS TAB STARTS HERE*/
+/*SKILLS TAB: box spacing*/
+.box2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1rem 3rem;
+}
+
+/*container for columns*/
+.trialcolumn{
+    display: flex;
+    flex-direction: column;
+    width: 42.5%;
+    max-width: 380px;
+}
+
+/*SKILLS TAB: box area for skills*/
+.boxskill{
+    padding: 0.5rem 0.5rem 0 0.5rem ;
+    justify-content: center;
+	background-color: rgb(255, 252, 250);
+	border: 1px solid rgb(143, 19, 19);
+	border-radius: 9px;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 1rem;
+}
+
+
+
+/*SKILLS TAB: text: prog languages*/
+.skilltext{
+	color: #333;
+	font-size: 1.3rem;
+	font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/*PROGRESS BAR TINGZ*/
+progress {
+	display:inline-block;
+	width: 95%;
+	padding:2px 2px 2px 15px;
+	margin:0;
+	border: 0;
+	border-radius: 15px;
+	text-align: left;
+	position:relative;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 0.6rem;
+}
+progress::-webkit-progress-bar {
+	height:1rem;
+	width:auto;
+	margin:0 auto;
+	background-color: rgb(252, 252, 252);
+	border-radius: 15px;
+	box-shadow:0px 0px 6px #777 inset;
+}
+progress::-webkit-progress-value {
+	float: left;
+	height:1rem;
+	margin:0px -10px 0 0;
+	background: #fdad7f;
+	border-radius: 10px;
+	box-shadow:0px 0px 5px rgb(114, 114, 114) inset;
+}
+progress:after {
+	margin:-26px 0 0 -7px;
+	padding: 0;
+	float: left;
+	content: attr(value) '%';
+}
+/*END PROGRESS TAB*/
+/*PROJECTS TAB STARTS HERE*/
+/*PROJECTS: alignments outside the box*/
+.box3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem 3rem;
+}
+
+/*CONTAINER FOR COLUMNS*/
+.box3 .trialcolumn2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 42.5%;
+    max-width: 350px;
+    min-width: 280px;
+}
+
+/*PROJECTS: alignments inside the box*/
+.projectarea{    
+    padding: 0.8rem 0.5rem 0.2rem 0.5rem ;
+	background-color:#fdad7f;
+	border: 1px solid rgb(143, 19, 19);
+	border-radius: 9px;
+    width: 100%;
+    max-width: 300px;
+    height: 340px;
+    margin: 0.5rem;
+
+}
+
+.projectarea:hover {
+    border: 1.5px solid rgb(19, 19, 19);
+  }
+
+.box3 .projpic{
+    display: flex;
+    margin: 0.2rem 1.1rem 0.2rem 1.1rem;
+    height: 300px;
+    width: 94%; 
+    max-width: 550px;
+}
+
+/*PROJECTS: img*/
+.box3 .projpic img{
+    width: 94%;
+    padding-bottom: 10px;
+}
+  
+/*END OF PROJECTS PAGE*/ 
+
+/*ABOUT PAGE STARTS HERE*/
+/*container of pic and texts*/
+.maincontainer2 .container{
+    display: flex;
+    flex-direction: row;  
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 60px 20px 0 20px;
+
+}
+
+/*container of pic*/
+.maincontainer2 .container .pfp{
+    display: flex;
+    padding: 0.3em 0;
+    min-width: 320px;
+    width: 115%; 
+    margin: 0;
+}
+
+.maincontainer2 .container .pfp img{
+    width: 100%;
+    padding-bottom: 15px;  
+}
+
+/*container for text: hi, name, and description*/
+.maincontainer2 .container .name{
+    font-family: 'Dosis', sans-serif;
+    font-weight: 800;
+    font-size: 2.8rem;
+    text-align: left;
+    color: rgb(241, 84, 72);
+}
+
+/*text: Hi*/
+.maincontainer2 .container .name .name-hi{
+    font-weight: 800;
+    font-size: 2.8rem;
+}
+
+/*text: name*/
+.maincontainer2 .container .name .name-text{
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 1.4px;
+}
+
+/*text: description*/
+.maincontainer2 .container .name .desc-text{
+    font-size: 1.6rem;
+    text-align: left;
+    font-weight: 500;
+    padding-right: 5rem;
+}
+
+/*CONTACT US: text*/
+.cutext{
+        font-size: 1rem;
+        font-style: oblique;
+        padding: 1rem; 
+        margin: 0;
+}
+
+/*CONTACT US alignment*/
+.contactus{
+    margin: 0;
+    text-align: center;
+}
+
+@media only screen and (max-width:768px){
+    .maincontainer .container{
+        flex-direction: column;    
+    }
+
+    .maincontainer .container .pfp{
+        width: 85%;
+    }
+
+    .desc-text{
+        padding-bottom:4rem;
+    }
+
+    .name .name-hi{
+        width: 100%;
+    }
+    .name .name-hi p{
+        font-size: 3.5rem;
+    }
+    .box2{
+        flex-direction: column;
+        align-items: center;
+    }
+    .box2 .trialcolumn{
+        width: 84%;
+    }
+    .maincontainer2 .container{
+        flex-direction: column;
+        
+    }
+    .maincontainer2 .container .pfp{
+        width: 85%;
+    }
+    .maincontainer2 .container .name-hi p{
+        font-size: 3rem;
+    }
+    .maincontainer2 .container .name-text p{
+        font-size: 1.8rem;
+    }
+
+    .navbar .container .navbar-text {
+        text-align: center;
+    }
+    
+}
+
+@media only screen and (max-width:1180px){
+    .box3{
+        flex-direction: column;  
+        align-items: center; 
+    }    
+}
